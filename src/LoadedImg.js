@@ -12,7 +12,7 @@ class LoadedImg extends Component {
             );
         }
         return (
-            <div class="alert alert-info" role="alert">No Avatar</div>
+            <div className="alert alert-info" role="alert">No Avatar</div>
         );
     }
   }

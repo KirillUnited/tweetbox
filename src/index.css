@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.is_invalid {
+  color: #905;
+}
+
+input[hidden] {
+  display: none;
+}

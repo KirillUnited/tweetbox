@@ -1,11 +1,3 @@
-.is_invalid {
-  color: #905;
-}
-
-input[hidden] {
-  display: none;
-}
-
 .thumbnail {
   position: relative;
   width: 128px;

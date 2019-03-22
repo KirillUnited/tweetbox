@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import defaultImgUrl from './avatar.jpg'
 import List from './List';
 import LoadedImg from './LoadedImg';
 
@@ -11,9 +12,9 @@ class TweetBox extends Component {
           author: 'anonymous',
           text: '',
           photoAdded: false,
-          defaultImgUrl: 'src/avatar.jpg',
+          defaultImgUrl: defaultImgUrl,
           imgUrl: '',
-          data: [{ author: 'Сафонов из Назарета', msg: 'Всем привет! Объясните пожалуйста, что за значение такое', date: 'Wed Mar 20 2019 12:35:52', avatar: 'src/avatar.jpg' }, { author: 'Izzatbek Maxmadaliev', msg: 'ooooooooooo', date: 'Wed Mar 20 2019 12:35:52', avatar: 'https://c.disquscdn.com/uploads/users/6181/6461/avatar92.jpg?1489349786' }]
+          data: [{ author: 'Сафонов из Назарета', msg: 'Всем привет! Объясните пожалуйста, что за значение такое', date: 'Wed Mar 20 2019 12:35:52', avatar: defaultImgUrl }, { author: 'Izzatbek Maxmadaliev', msg: 'ooooooooooo', date: 'Wed Mar 20 2019 12:35:52', avatar: 'https://c.disquscdn.com/uploads/users/6181/6461/avatar92.jpg?1489349786' }]
       };
 
       this.handleChange = this.handleChange.bind(this);
@@ -111,7 +112,7 @@ class TweetBox extends Component {
                       <LoadedImg photoAdded={this.state.photoAdded} imgURL={this.state.imgUrl} />
                   </div>
                   <p>* - required</p>
-                  <span className={(this.remainingCharacters() < 0) ? "is_invalid" : false}>Remaining Characters: {this.remainingCharacters()}</span>
+                  <span className={(this.remainingCharacters() < 0) ? "is_invalid" : undefined}>Remaining Characters: {this.remainingCharacters()}</span>
                   <button className="btn btn-primary pull-right" disabled={this.remainingCharacters() === 140 || this.remainingCharacters() < 0}>Tweet</button>
                   <label type="button" className="btn btn-default pull-right">
                       {this.state.photoAdded ? "✓ Photo Added" : "Add Photo"}

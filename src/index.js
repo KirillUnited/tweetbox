@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import TweetBox from './App';
+// import TweetBox from './App';
+import Main from './AppRouter';
 
-ReactDOM.render(<TweetBox />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
