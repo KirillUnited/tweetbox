@@ -3,6 +3,7 @@ import './App.css';
 import defaultImgUrl from './avatar.jpg'
 import List from './List';
 import LoadedImg from './LoadedImg';
+import data from './data.json';
 
 class TweetBox extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class TweetBox extends Component {
           photoAdded: false,
           defaultImgUrl: defaultImgUrl,
           imgUrl: '',
-          data: [{ author: 'Сафонов из Назарета', msg: 'Всем привет! Объясните пожалуйста, что за значение такое', date: 'Wed Mar 20 2019 12:35:52', avatar: defaultImgUrl }, { author: 'Izzatbek Maxmadaliev', msg: 'ooooooooooo', date: 'Wed Mar 20 2019 12:35:52', avatar: 'https://c.disquscdn.com/uploads/users/6181/6461/avatar92.jpg?1489349786' }]
+          data: data
       };
 
       this.handleChange = this.handleChange.bind(this);
