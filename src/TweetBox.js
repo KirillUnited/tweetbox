@@ -101,7 +101,7 @@ class TweetBox extends Component {
               <form name="FORM_TWEET" className="well clearfix" onSubmit={this.onSubmit}>
                   {this.overflowAlert()}
                   <div className="form-group">
-                      <label for="">Author</label>
+                      <label for="">Title</label>
                       <input type="text" className="form-control" name="AUTHOR" id="" aria-describedby="helpId" placeholder="" />
                   </div>
                   <div className="form-group">
