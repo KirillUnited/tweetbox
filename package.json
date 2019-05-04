@@ -33,5 +33,6 @@
   ],
   "devDependencies": {
     "cz-customizable": "^5.5.3"
-  }
+  },
+  "homepage": "."
 }
